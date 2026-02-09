@@ -38,18 +38,24 @@ h3 {
 
 /* Header & Logo */
 header {
-    padding: 40px 0;
+    padding: 20px 0;
     backdrop-filter: blur(10px);
-    z-index: 100;
+    background: var(--glass-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--glass-border);
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 800;
     background: linear-gradient(to right, #fff, var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -89,6 +95,10 @@ header {
 }
 
 /* Categories */
+main {
+    padding-top: 180px;
+}
+
 .categories {
     display: flex;
     gap: 12px;
