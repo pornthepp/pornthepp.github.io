@@ -10,6 +10,6 @@ const promptData = [
                     ท่าโพส: "ท่ายืนแบบภาพถ่ายบุคคล เห็นสัดส่วนร่างกาย ส่วนเว้าส่วนโค้งชัดเจน แสดงอารมณ์สดใส น่ารัก น่าดึงดูด",
                     กล้อง: "iphone หน้าชัด และหลังเบลอเล็กน้อย",
                     มุมกล้อง: "ภาพ medium shot มุมกล้องระดับครึ่งตัวตั้งแต่หัวเข่าจนถึงหัว อัตราส่วนภาพ 9:16 " },
-        image: "https://img2.pic.in.th/pic/Central_Khonkaen_Logo_1.md.png"
+        image: "https://img2.pic.in.th/Gemini_Generated_Image_euq3ayeuq3ayeuq3.png"
     }
 ];
