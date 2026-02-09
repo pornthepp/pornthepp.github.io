@@ -41,7 +41,7 @@ header {
     padding: 20px 0;
     backdrop-filter: blur(10px);
     background: var(--glass-bg);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -126,10 +126,27 @@ main {
 
 /* Grid System & Specific Dimming Effect */
 .prompt-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
+    column-count: 4;
+    column-gap: 4px;
     padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+    .prompt-grid {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 900px) {
+    .prompt-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .prompt-grid {
+        column-count: 1;
+    }
 }
 
 /* The magic dimming effect: 
@@ -142,12 +159,17 @@ main {
 
 .prompt-item {
     background: var(--surface-color);
-    border-radius: 20px;
+    border-radius: 0;
+    /* Sharp corners for mosaic feel */
     overflow: hidden;
     cursor: pointer;
     transition: var(--transition-smooth);
     position: relative;
-    border: 1px solid var(--glass-border);
+    border: none;
+    margin-bottom: 4px;
+    /* Match column-gap */
+    display: inline-block;
+    width: 100%;
 }
 
 .prompt-item:hover {
@@ -161,31 +183,13 @@ main {
 
 .prompt-item img {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    height: auto;
+    display: block;
     transition: var(--transition-smooth);
 }
 
 .prompt-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-}
-
-.prompt-overlay h3 {
-    font-size: 1.1rem;
-    margin-bottom: 4px;
-}
-
-.prompt-overlay p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
 }
 
 /* Modal Styling */
