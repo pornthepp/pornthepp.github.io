@@ -9,7 +9,14 @@ let currentCategory = 'all';
 
 // Initialize
 function init() {
-    renderGrid(promptData);
+    console.log("Initializing Promptlnw...");
+    if (typeof promptData !== 'undefined') {
+        console.log("Found data:", promptData.length, "items");
+        renderGrid(promptData);
+    } else {
+        console.error("promptData is not defined! Check if sources.js is loaded correctly.");
+        promptGrid.innerHTML = '<div class="no-results">Error: ไม่สามารถโหลดข้อมูลได้ (Data not found)</div>';
+    }
     setupEventListeners();
 }
 
@@ -17,7 +24,7 @@ function init() {
 function renderGrid(data) {
     promptGrid.innerHTML = '';
 
-    if (data.length === 0) {
+    if (!data || data.length === 0) {
         promptGrid.innerHTML = '<div class="no-results">ไม่พบผลลัพธ์ที่คุณค้นหา...</div>';
         return;
     }
@@ -25,8 +32,10 @@ function renderGrid(data) {
     data.forEach(item => {
         const gridItem = document.createElement('div');
         gridItem.className = 'prompt-item';
+        // Add style directly for immediate visibility if CSS fails
+        gridItem.style.backgroundColor = '#1e293b';
         gridItem.innerHTML = `
-            <img src="${item.image}" alt="${item.title}" loading="lazy">
+            <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<div style=padding:20px;text-align:center;color:#64748b>Image failed to load</div>'">
             <div class="prompt-overlay">
                 <h3>${item.title}</h3>
                 <p>${item.prompt}</p>
