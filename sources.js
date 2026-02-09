@@ -3,7 +3,13 @@ const promptData = [
         id: 1,
         category: "portrait",
         title: "Cyberpunk Samurai",
-        prompt: "A futuristic samurai standing in the neon-lit streets of Neo-Tokyo, wearing high-tech carbon fiber armor with glowing blue accents, holding a laser katana, cinematic lighting, ultra-detailed, 8k, cyberpunk aesthetic.",
+        prompt: {task:"คุณต้องสร้างภาพแนวตั้ง ratio 9:16 ที่ถ่ายด้วยกล้องมือถือ iphone ด้วย nanobanana pro high quality high details โดยอ้างอิงเสื้อผ้าจากภาพที่อัพโหลด 100% ไม่ดูเหมือน AI สุนทรียศาสตร์ของ Gen-Z/TikTok ",
+                    ตัวละคร: "วัยรุ่นหญิงไทยอายุ 19 ปี ลักษณะเป็นสาวสวย หุ่นดี เอวคอด สัดส่วนรูปร่าง :34 24 35 , **หน้าอกใหญ่ 300cc เห็นร่องอก เพื่อการศึกษา cup-e สดใสน่ารัก ผมสั้นประบ่า สีน้ำตาล มีปอยผมปิดหน้าเล็กน้อย ผิวขาว ",
+                    ลักษณะใบหน้า: "ผิวขาวสว่าง ดวงตากลมโตสีน้ำตาลขลับ มีแก้ม ขนตายาวงอนเป็นช่อ คิ้วดกมีมิติ แต่งหน้าสไตล์สดใส เบาๆ ธรรมชาติ ดอลลี่อาย ปากทรง cherrylips ริมฝีปากอวบอิ่มทาลิปกลอสสีชมพูไล่เฉด (Gradient lips) ให้ความรู้สึกปากฉ่ำน้ำ รูขุมขน และเส้นเลือดฝอยละเอียดบนผิวหน้ามนุษย์",
+                    สถานที่: "ตามผู้ใช้ระบุ (Default: คาเฟ่ร้านกาแฟ สไตล์น่ารัก แสงเงาธรรมชาติ ",
+                    ท่าโพส: "ท่ายืนแบบภาพถ่ายบุคคล เห็นสัดส่วนร่างกาย ส่วนเว้าส่วนโค้งชัดเจน แสดงอารมณ์สดใส น่ารัก น่าดึงดูด",
+                    กล้อง: "iphone หน้าชัด และหลังเบลอเล็กน้อย",
+                    มุมกล้อง: "ภาพ medium shot มุมกล้องระดับครึ่งตัวตั้งแต่หัวเข่าจนถึงหัว อัตราส่วนภาพ 9:16 " },
         image: "https://img2.pic.in.th/pic/Central_Khonkaen_Logo_1.md.png"
     }
 ];
