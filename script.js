@@ -20,6 +20,17 @@ function init() {
     setupEventListeners();
 }
 
+// Helper to format prompt object or string
+function formatPrompt(prompt) {
+    if (typeof prompt === 'string') return prompt;
+    if (typeof prompt === 'object' && prompt !== null) {
+        return Object.entries(prompt)
+            .map(([key, value]) => `${key}: ${value}`)
+            .join('\n');
+    }
+    return '';
+}
+
 // Render Grid
 function renderGrid(data) {
     promptGrid.innerHTML = '';
@@ -32,13 +43,15 @@ function renderGrid(data) {
     data.forEach(item => {
         const gridItem = document.createElement('div');
         gridItem.className = 'prompt-item';
-        // Add style directly for immediate visibility if CSS fails
         gridItem.style.backgroundColor = '#1e293b';
+
+        const displayPrompt = formatPrompt(item.prompt);
+
         gridItem.innerHTML = `
             <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<div style=padding:20px;text-align:center;color:#64748b>Image failed to load</div>'">
             <div class="prompt-overlay">
                 <h3>${item.title}</h3>
-                <p>${item.prompt}</p>
+                <p>${displayPrompt}</p>
             </div>
         `;
         gridItem.addEventListener('click', () => openModal(item));
@@ -52,8 +65,11 @@ function filterItems() {
 
     const filtered = promptData.filter(item => {
         const matchesCategory = currentCategory === 'all' || item.category === currentCategory;
-        const matchesSearch = item.prompt.toLowerCase().includes(searchTerm) ||
+
+        const fullPromptText = formatPrompt(item.prompt).toLowerCase();
+        const matchesSearch = fullPromptText.includes(searchTerm) ||
             item.title.toLowerCase().includes(searchTerm);
+
         return matchesCategory && matchesSearch;
     });
 
@@ -65,7 +81,13 @@ function openModal(item) {
     document.getElementById('modalImage').src = item.image;
     document.getElementById('modalTitle').textContent = item.title;
     document.getElementById('modalCategory').textContent = item.category;
-    document.getElementById('promptText').textContent = item.prompt;
+
+    const promptDisplayArea = document.getElementById('promptText');
+    const displayPrompt = formatPrompt(item.prompt);
+
+    // Display with line breaks preserved
+    promptDisplayArea.style.whiteSpace = 'pre-wrap';
+    promptDisplayArea.textContent = displayPrompt;
 
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden'; // Prevent scrolling
