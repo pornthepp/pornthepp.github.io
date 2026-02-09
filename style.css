@@ -40,8 +40,6 @@ h3 {
 header {
     padding: 40px 0;
     backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
     z-index: 100;
 }
 
