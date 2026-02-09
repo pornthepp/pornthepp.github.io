@@ -4,55 +4,55 @@ const promptData = [
         category: "portrait",
         title: "Cyberpunk Samurai",
         prompt: "A futuristic samurai standing in the neon-lit streets of Neo-Tokyo, wearing high-tech carbon fiber armor with glowing blue accents, holding a laser katana, cinematic lighting, ultra-detailed, 8k, cyberpunk aesthetic.",
-        image: "https://images.unsplash.com/photo-1623126389902-6c846c80f4c8?q=80&w=1000&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1623126389902-6c846c80f4c8?q=80&w=800&auto=format&fit=max"
     },
     {
         id: 2,
         category: "portrait",
-        title: "Ethereal Forest Spirit",
-        prompt: "A mystical forest spirit with skin made of bark and eyes like glowing emeralds, surrounded by bioluminescent flora, soft ethereal light filtering through ancient trees, masterpiece, highly intricate, fantasy style.",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop"
+        title: "Dark Glossy Mask",
+        prompt: "A high-gloss black mask with glowing pink energy eyes and a jagged smile, melting effect, abstract dark background, 3D render, octane render, masterpiece.",
+        image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=800&auto=format&fit=max"
     },
     {
         id: 3,
         category: "product",
-        title: "Luxury Perfume Bottle",
-        prompt: "Luxury perfume bottle on a dark marble base, water droplets, soft golden lighting, minimalist and elegant composition, depth of field, 8k resolution, professional product photography.",
-        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1000&auto=format&fit=crop"
+        title: "Floral Hedgehog",
+        prompt: "A cute fluffy hedgehog holding a single pink flower, soft watercolor style, delicate textures, pastel background, warm friendly vibes, highly detailed illustration.",
+        image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=800&auto=format&fit=max"
     },
     {
         id: 4,
-        category: "product",
-        title: "Modern Coffee Machine",
-        prompt: "Modern minimalist espresso machine, matte black finish, steam rising from a cup, warm moody lighting, high-end kitchen aesthetic, clean lines, macro shot, hyper-realistic.",
-        image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=1000&auto=format&fit=crop"
+        category: "portrait",
+        title: "Urban Commuter",
+        prompt: "A person riding a bicycle through a vibrant purple and yellow stylized city street, impressionist painting style, heavy brushstrokes, dynamic energy, afternoon sunlight.",
+        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=max"
     },
     {
         id: 5,
         category: "portrait",
         title: "Vintage Cinema Star",
         prompt: "1950s Hollywood starlet portrait, classic black and white, dramatic noir lighting, elegant dress and pearls, film grain, nostalgic atmosphere, high contrast, elegant beauty.",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=max"
     },
     {
         id: 6,
         category: "product",
-        title: "Wireless Silver Headphones",
-        prompt: "Sleek silver wireless headphones floating in a dark void, neon purple rim lighting, futuristic tech vibes, clean render, 3D unreal engine 5 style, advertising photography.",
-        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop"
+        title: "Industrial Mech",
+        prompt: "A massive white and gray industrial robot in a dark futuristic hangar, intricate mechanical parts, warning lights, cinematic scale, sci-fi concept art.",
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=max"
     },
     {
         id: 7,
         category: "portrait",
-        title: "Desert Explorer",
-        prompt: "A nomadic explorer crossing vast golden sand dunes at sunset, wearing flowing desert robes and goggles, warm orange sunlight, cinematic composition, epic scale, adventure core.",
-        image: "https://images.unsplash.com/photo-1517462964-21fdcec3f25b?q=80&w=1000&auto=format&fit=crop"
+        title: "Dreadlock Character",
+        prompt: "3D stylized character with large dreadlocks and golden glasses, grumpy expression, high detail textures, pixar style lighting, charcoal gray background.",
+        image: "https://images.unsplash.com/photo-1517462964-21fdcec3f25b?q=80&w=800&auto=format&fit=max"
     },
     {
         id: 8,
         category: "product",
-        title: "Emerald Watch",
-        prompt: "Luxury emerald green watch face with gold accents, macro photography, focusing on texture and craftsmanship, dark velvet background, sophisticated lighting, premium brand style.",
-        image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1000&auto=format&fit=crop"
+        title: "Subway Station",
+        prompt: "A symmetrical shot of a futuristic subway station, blue and red tiles, red plastic chairs, geometric lighting, cinematic atmosphere, clean lines.",
+        image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=max"
     }
 ];

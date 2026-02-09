@@ -170,6 +170,8 @@ main {
     /* Match column-gap */
     display: inline-block;
     width: 100%;
+    break-inside: avoid-column;
+    /* Prevent item from breaking between columns */
 }
 
 .prompt-item:hover {
