@@ -4,7 +4,7 @@ const promptData = [
         category: "portrait",
         title: "Cyberpunk Samurai",
         prompt: "A futuristic samurai standing in the neon-lit streets of Neo-Tokyo, wearing high-tech carbon fiber armor with glowing blue accents, holding a laser katana, cinematic lighting, ultra-detailed, 8k, cyberpunk aesthetic.",
-        image: "https://images.unsplash.com/photo-1623126389902-6c846c80f4c8?q=80&w=800&auto=format&fit=max"
+        image: "https://img2.pic.in.th/pic/Central_Khonkaen_Logo_1.md.png"
     },
     {
         id: 2,
