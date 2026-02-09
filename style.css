@@ -131,27 +131,29 @@ main {
 }
 
 /* Grid System & Specific Dimming Effect */
+/* Grid System (Left to Right) */
 .prompt-grid {
-    column-count: 4;
-    column-gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
     padding-bottom: 100px;
 }
 
 @media (max-width: 1200px) {
     .prompt-grid {
-        column-count: 3;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 900px) {
     .prompt-grid {
-        column-count: 2;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     .prompt-grid {
-        column-count: 1;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -165,19 +167,14 @@ main {
 
 .prompt-item {
     background: var(--surface-color);
-    border-radius: 0;
-    /* Sharp corners for mosaic feel */
+    border-radius: 12px; /* Slightly rounded for premium look */
     overflow: hidden;
     cursor: pointer;
     transition: var(--transition-smooth);
     position: relative;
-    border: none;
-    margin-bottom: 4px;
-    /* Match column-gap */
-    display: inline-block;
-    width: 100%;
-    break-inside: avoid-column;
-    /* Prevent item from breaking between columns */
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
 }
 
 .prompt-item:hover {
