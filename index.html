@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promptlnw - AI Image Prompt Library</title>
+    <meta name="description"
+        content="คลังเก็บไอเดีย Prompt สำหรับการสร้างรูปภาพ AI แบ่งหมวดหมู่ Portrait และ Product พร้อมก๊อปปี้ไปใช้งานได้ทันที">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark-theme">
+    <header>
+        <div class="container">
+            <div class="logo-area">
+                <h1 class="logo">Prompt<span>lnw</span></h1>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="ค้นหา Prompt เช่น 'ไซเบอร์พังค์', 'น้ำหอม'...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="categories">
+            <button class="cat-btn active" data-category="all">ทั้งหมด</button>
+            <button class="cat-btn" data-category="portrait">Portrait</button>
+            <button class="cat-btn" data-category="product">Product</button>
+        </nav>
+
+        <section id="promptGrid" class="prompt-grid">
+            <!-- Items filled by JavaScript -->
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="Full resolution prompt image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Prompt Detail</h2>
+                    <div class="category-tag" id="modalCategory">Portrait</div>
+                    <div class="prompt-block">
+                        <p id="promptText"></p>
+                    </div>
+                    <button id="copyBtn" class="primary-btn">
+                        <span class="btn-text">Copy Prompt</span>
+                        <span class="success-icon">&#10003;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Promptlnw. Designed for AI Creators.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
