@@ -2,7 +2,7 @@ const promptData = [
     {
         id: 6,
         category: "portrait",
-        title: "นางแบบมัดผม",
+        title: "นางแบบมัดผม ด้วยกิ๊ฟ",
         prompt: {
             task: "คุณต้องสร้างภาพแนวตั้ง ratio 9:16  ด้วย nanobanana pro high quality high details โดยอ้างอิงเสื้อผ้าจากภาพที่อัพโหลด 100% ไม่ดูเหมือน AI",
             ตัวละคร: "ผู้หญิงวัยรุ่นอายุ 19-20 ปี ลักษณะเป็นสาวสวย หุ่นดี เอวคอด สัดส่วนรูปร่าง :34 24 35 , **หน้าอก Voluptuous Bust สดใสน่ารัก ผมยาวมัดรวบติดกิ๊ฟหนีบผมมีฟัน เส้นผมเล็กๆปลิวตามลมเล็กน้อย มีผมปลิวมาปิดหน้าบ้างเล็กน้อยเป็นธรรมชาติ หญิงสาวผิวขาวอมชมพูสว่างใสเนียนละเอียด เห็นเส้นเลือดตามธรรมชาติของมนุษย์ มีโทนผิวธรรมชาติแบบเกาหลี (natural pinkish fair skin) เล็บยาวทรงอัลมอนด์ สีชมพูอ่อนใสแบบธรรมชาติ",
@@ -15,7 +15,7 @@ const promptData = [
             อารมณ์โดยรวม:"น่ารัก ทะเล้น",
             NegativePrompt: "low quality, pixelated, noise, grain, jpeg artifacts, plastic skin, cartoon, illustration, deforme 5:7"
         },
-        image: "https://img5.pic.in.th/file/secure-sv1/Image_202602100939-1.md.jpeg"
+        image: "https://img2.pic.in.th/Image_202602101025.md.jpeg"
     },
         {
         id: 6,
@@ -33,7 +33,7 @@ const promptData = [
             อารมณ์โดยรวม:"น่ารัก ทะเล้น",
             NegativePrompt: "low quality, pixelated, noise, grain, jpeg artifacts, plastic skin, cartoon, illustration, deforme 5:7"
         },
-        image: "https://img5.pic.in.th/file/secure-sv1/Image_202602100939-1.md.jpeg"
+        image: "https://img5.pic.in.th/file/secure-sv1/Task_you_need_202602101025.md.jpeg"
     },
     {
         id: 5,
