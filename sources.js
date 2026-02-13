@@ -1,5 +1,28 @@
 const promptData = [
        {
+        id: 13,
+        category: "portrait",
+        title: "นางแบบผมยาวหน้ารูปไข่ใส่แว่น",
+        prompt: {
+            Task: "ภาพถ่ายจากช่างภาพบุคลมืออาชีพ high quality high details โดยอ้างอิงเสื้อผ้าจากภาพที่อัพโหลด 100% ไม่ดูเหมือน AI รายละเอียด 8K",
+              ตัวละคร: "จากภาพใบหน้าที่อัพโหลด 100% ผู้หญิงวัยรุ่นอายุ 19-20 ปี ลักษณะเป็นสาวสวย หุ่นดี เอวคอด สัดส่วนรูปร่าง :34 24 35 ใส่เว่นสายตากรอบเว่นทรงหยดน้ำ ขาแว่นสีชมพูอ่อนใส สดใสน่ารัก ผิวขาวอมชมพูสว่างใสเนียนละเอียด เห็นเส้นเลือดตามธรรมชาติของมนุษย์ มีโทนผิวธรรมชาติแบบเกาหลี (natural pinkish fair skin) เล็บยาวทรงอัลมอนด์ สีชมพูอ่อนใสแบบธรรมชาติ",
+              หน้าอก: "Voluptuous Bust  เห็นร่องอก highlight เนินหน้าอกเล็กน้อย  มีดีเทลของเส้นเลือดฝอยบางๆ  ไม่โป๊เปลือย",
+              ทรงผม: "ผมยาวดำตรงสวย มีปรอยผมที่แก้มเล็กน้อยเป็นธรรมชาติ",
+              ลักษณะใบหน้า: "นางแบบมีโหนกแก้ม คางไม่แหลม ใบหน้าเรียวรูปไข่ (oval face)หน้าผากกว้าง ดวงตาสีน้ำตาลอ่อนเป็นประกาย Upturned Eyes ตาคมกรีด eyeliner  ขนตายาวงอนเรียงช่อ ตาชั้นเดียว monolid eyes ไม่มีถุงใต้ตา มีไฝเสน่ห์  แต่งหน้าสไตล์ฉ่ำวาว (dewy makeup look)  ผิวหน้าโกลว์ฉ่ำ มีไฮไลต์บนโหนกแก้ม จมูก และหน้าผากอย่างพอดี ปัดแก้มและปลายจมูกด้วยสีชมพูอ่อนระเรื่อ คิ้วดกมีมิติ  ปากทรง cherrylips ริมฝีปากอวบอิ่มทาลิปกลอสสีชมพูไล่เฉด (Gradient lips) ให้ความรู้สึกปากฉ่ำน้ำ ละเอียดบนผิวหน้ามนุษย์",
+              การแต่งกาย: "ตามภาพที่แนบ ",
+              สถานที่: "toscana valley  เขาใหญ่ อำเภอปากช่อง จังหวัดนครราชสีมา แสงแดดกลางวัน ท้องฟ้าเคลียร์ ไร้เมฆ ท้องฟ้าสีฟ้าสดใส",
+              ท่าโพส:  "สุ่มโพสถ่ายภาพบุคคล แบบเต็มตัว ด้วยท่าน่ารักๆ แบบวัยรุ่น",
+              ตั้งค่ากล้อง: "Aperture f/2.8–f/4 เพื่อให้ฉากหลังละลายบางส่วน White balance daylight (5500–5700K) ",
+              มุมกล้อง: "มุมกล้องเต็มตัว อัตราส่วนภาพ 9:16 ",
+              อารมณ์โดยรวม: "น่ารัก มั่นใจ",
+              Framing:"foreground bokeh, blurry flowers in foreground, depth of field, shot through leaves",
+              แสง:"soft natural lighting, face illuminated, catchlight in eyes",
+              การจัดองค์ประกอบภาพ:"composition following rule of thirds, subject placed at intersection points, balanced composition",
+              NegativePrompt: "low quality, dolly eye, pixelated, noise, grain, jpeg artifacts, plastic skin, cartoon, illustration, deforme 5:7"
+        },
+        image: "https://img2.pic.in.th/Randomly_select_cute_2k_202602130905.md.jpeg"
+    },
+       {
         id: 12,
         category: "portrait",
         title: "นางแบบผมยาวหน้ารูปไข่ใส่แว่น",
