@@ -18,30 +18,45 @@
 
 <body class="dark-theme">
     <header>
-        <div class="container">
+        <div class="container header-container">
             <div class="logo-area">
                 <h1 class="logo">Prompt<span>lnw</span></h1>
             </div>
 
+            <nav class="main-nav">
+                <a href="#" class="nav-link active" id="navGallery">Gallery</a>
+                <a href="#" class="nav-link" id="navSpecial">Special Prompt</a>
+            </nav>
+
             <div class="search-container">
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="ค้นหา Prompt เช่น 'ไซเบอร์พังค์', 'น้ำหอม'...">
+                    <input type="text" id="searchInput" placeholder="ค้นหา Prompt...">
                 </div>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <nav class="categories">
-            <button class="cat-btn active" data-category="all">ทั้งหมด</button>
-            <button class="cat-btn" data-category="portrait">Portrait</button>
-            <button class="cat-btn" data-category="product">Product</button>
-            <button class="cat-btn" data-category="etc">อื่นๆ</button>
-        </nav>
+        <div id="galleryView">
+            <nav class="categories">
+                <button class="cat-btn active" data-category="all">ทั้งหมด</button>
+                <button class="cat-btn" data-category="portrait">Portrait</button>
+                <button class="cat-btn" data-category="product">Product</button>
+                <button class="cat-btn" data-category="etc">อื่นๆ</button>
+            </nav>
 
-        <section id="promptGrid" class="prompt-grid">
-            <!-- Items filled by JavaScript -->
-        </section>
+            <section id="promptGrid" class="prompt-grid">
+                <!-- Items filled by JavaScript -->
+            </section>
+        </div>
+
+        <div id="specialView" style="display: none;">
+            <section class="special-content">
+                <h2 style="text-align: center; margin-top: 50px;">Special Prompts</h2>
+                <p style="text-align: center; color: var(--text-muted);">Coming soon! Exclusive and advanced AI prompts.
+                </p>
+            </section>
+        </div>
     </main>
 
     <!-- Modal -->

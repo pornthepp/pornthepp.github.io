@@ -5,6 +5,11 @@ const modal = document.getElementById('imageModal');
 const closeModal = document.querySelector('.close-modal');
 const copyBtn = document.getElementById('copyBtn');
 
+const navGallery = document.getElementById('navGallery');
+const navSpecial = document.getElementById('navSpecial');
+const galleryView = document.getElementById('galleryView');
+const specialView = document.getElementById('specialView');
+
 let currentCategory = 'all';
 
 // Initialize
@@ -135,6 +140,31 @@ function setupEventListeners() {
     });
 
     copyBtn.addEventListener('click', copyPrompt);
+
+    // Navbar Navigation
+    navGallery.addEventListener('click', (e) => {
+        e.preventDefault();
+        switchView('gallery');
+    });
+
+    navSpecial.addEventListener('click', (e) => {
+        e.preventDefault();
+        switchView('special');
+    });
+}
+
+function switchView(view) {
+    if (view === 'gallery') {
+        galleryView.style.display = 'block';
+        specialView.style.display = 'none';
+        navGallery.classList.add('active');
+        navSpecial.classList.remove('active');
+    } else {
+        galleryView.style.display = 'none';
+        specialView.style.display = 'block';
+        navGallery.classList.remove('active');
+        navSpecial.classList.add('active');
+    }
 }
 
 document.addEventListener('DOMContentLoaded', init);
