@@ -167,4 +167,101 @@ function switchView(view) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', init);
+const specialData = [
+    {
+        category: "Composition",
+        title: "Rule of Thirds",
+        desc: "กฎสามส่วน: จัดวางตัวแบบไว้ที่จุดตัดเพื่อความสมดุล",
+        prompt: "composition following rule of thirds, subject placed at intersection points, perfect visual balance"
+    },
+    {
+        category: "Composition",
+        title: "Headroom Illusion",
+        desc: "เพิ่มความสูง: เว้นพื้นที่ว่างเหนือศีรษะเยอะๆ เพื่อให้ตัวแบบดูโปร่ง",
+        prompt: "wide shot, huge negative space above head, 1:1 ratio framing, making subject look tall and slender"
+    },
+    {
+        category: "Composition",
+        title: "Side Profile",
+        desc: "มุมข้างหน้าเรียว: ถ่ายมุมข้างหันหน้าเข้าหาแสงเพื่อให้เห็นกรามชัด",
+        prompt: "side profile view, showing sharp jawline, face illuminated by soft light, slimming angle"
+    },
+    {
+        category: "Composition",
+        title: "Low Angle Legs",
+        desc: "มุมต่ำขายาว: ถ่ายเสยจากมุมต่ำ ยื่นขามาด้านหน้า",
+        prompt: "low angle shot, worm's-eye view, camera shooting from below, exaggerated perspective, long legs"
+    },
+    {
+        category: "Composition",
+        title: "Symmetry",
+        desc: "สมมาตร: จัดวางตัวแบบไว้กึ่งกลางภาพฉากหลังทรงเรขาคณิต",
+        prompt: "centered composition, symmetrical background, circular framing element, perfect symmetry"
+    },
+    {
+        category: "Framing",
+        title: "Foreground Bokeh",
+        desc: "ฉากหน้าเบลอ: ใช้ใบไม้หรือดอกไม้บังหน้าเลนส์สร้างมิติ",
+        prompt: "foreground bokeh, blurry flowers in foreground, shot through leaves, dreamy depth of field, focus on subject"
+    },
+    {
+        category: "Framing",
+        title: "Architectural Frame",
+        desc: "กรอบสถาปัตยกรรม: ถ่ายลอดช่องประตู หน้าต่าง หรือเสา",
+        prompt: "framed by architecture, shot through doorway, looking through window frame, leading lines from fence"
+    },
+    {
+        category: "Posing",
+        title: "Triangle Arms",
+        desc: "ท่าแขนสามเหลี่ยม: ยกแขนขึ้นจับผมหรือเท้าคาง ให้เกิดช่องว่าง",
+        prompt: "arms creating triangle space, arms lifted away from body, hand touching hair, tucking hair behind ear"
+    },
+    {
+        category: "Lighting",
+        title: "Silhouette",
+        desc: "ย้อนแสงซิลูเอท: ถ่ายย้อนแสงให้เห็นแค่เงาและรูปร่าง",
+        prompt: "silhouette shot, backlit, dark figure against bright background, rim light on hair, high contrast, mysterious"
+    }
+];
+
+function renderSpecialGrid() {
+    const specialGrid = document.getElementById('specialGrid');
+    specialGrid.innerHTML = '';
+
+    specialData.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'special-card';
+        card.innerHTML = `
+            <div class="category">${item.category}</div>
+            <h3>${item.title}</h3>
+            <p class="description">${item.desc}</p>
+            <div class="prompt-box" onclick="copyText('${item.prompt}', this)">
+                <code>${item.prompt}</code>
+                <span class="copy-hint">Click to Copy</span>
+            </div>
+        `;
+        specialGrid.appendChild(card);
+    });
+}
+
+async function copyText(text, element) {
+    try {
+        await navigator.clipboard.writeText(text);
+        const hint = element.querySelector('.copy-hint');
+        const originalText = hint.innerText;
+        hint.innerText = 'Copied!';
+        hint.style.background = '#22c55e';
+
+        setTimeout(() => {
+            hint.innerText = originalText;
+            hint.style.background = 'var(--primary-color)';
+        }, 2000);
+    } catch (err) {
+        console.error('Failed to copy!', err);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    init();
+    renderSpecialGrid();
+});
