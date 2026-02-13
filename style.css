@@ -389,80 +389,112 @@ main {
     color: var(--text-muted);
 }
 
-.special-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 24px;
+.special-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     padding-bottom: 80px;
+}
+
+.special-group {
+    background: rgba(22, 27, 34, 0.4);
+    border-radius: 24px;
+    padding: 30px;
+    border: 1px solid var(--glass-border);
+}
+
+.special-group-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+    padding-left: 15px;
+    border-left: 4px solid var(--primary-color);
+    font-family: 'Outfit', sans-serif;
+}
+
+.group-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .special-card {
     background: var(--surface-color);
     border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    padding: 24px;
+    border-radius: 12px;
+    padding: 20px 24px;
     transition: var(--transition-smooth);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .special-card:hover {
-    transform: translateY(-5px);
+    transform: translateX(10px);
     border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: var(--surface-hover);
 }
 
-.special-card .category {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    color: var(--primary-color);
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
+.card-content {
+    flex: 1;
 }
 
 .special-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
     color: var(--text-main);
 }
 
 .special-card .description {
     font-size: 0.9rem;
     color: var(--text-muted);
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .special-card .prompt-box {
     background: #0f172a;
-    padding: 16px;
+    padding: 12px 20px;
     border-radius: 8px;
     font-family: 'Mono', monospace;
     font-size: 0.85rem;
-    color: #94a3b8;
+    color: var(--primary-color);
     position: relative;
     cursor: pointer;
     transition: var(--transition-smooth);
-    border: 1px solid transparent;
+    border: 1px solid var(--glass-border);
+    min-width: 300px;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .special-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .special-card .prompt-box {
+        width: 100%;
+        min-width: unset;
+    }
 }
 
 .special-card .prompt-box:hover {
     background: #1e293b;
-    border-color: var(--glass-border);
-}
-
-.special-card .prompt-box:active {
-    transform: scale(0.98);
+    border-color: var(--primary-color);
 }
 
 .special-card .copy-hint {
     position: absolute;
     right: 12px;
-    top: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 0.7rem;
     background: var(--primary-color);
     color: var(--bg-color);
-    padding: 2px 6px;
+    padding: 2px 8px;
     border-radius: 4px;
     font-weight: 700;
     opacity: 0;
