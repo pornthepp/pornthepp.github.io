@@ -19,7 +19,7 @@ const promptData = [
          "การจัดองค์ประกอบภาพ": "composition following rule of thirds, subject placed at intersection points, balanced composition",
          "NegativePrompt": "low quality, dolly eye, pixelated, noise, grain, jpeg artifacts, plastic skin, cartoon, illustration, deforme 5:7"
         },
-        image: "https://img2.pic.in.th/Task_highquality_highdetail_2k_202602140.md.jpeg"
+        image: "https://img5.pic.in.th/file/secure-sv1/Task_highquality_highdetail_202602151047.md.jpeg"
     },       
        {
         id: 15,
