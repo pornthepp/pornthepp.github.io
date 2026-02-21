@@ -1,5 +1,26 @@
 const promptData = [
        {
+        id: 18,
+        category: "portrait",
+        title: "นางแบบ sexy",
+        prompt: {
+            Task: "ภาพถ่ายจากช่างภาพบุคลมืออาชีพ high quality high details โดยอ้างอิงเสื้อผ้าจากภาพที่อัพโหลด 100% ไม่ดูเหมือน AI รายละเอียด 8K",
+            ตัวละคร: "ผู้หญิงไทย ใบหน้ารูปไข่ จมูกแบบนางแบบ อายุ20 ปี ผิวขาว อวบ ผมดำยาว มัดผม เปิดหน้าผาก ใส่เสื้อชุดว่ายน้ำแบบ biginy สีดำ",
+            หน้าอก: "Voluptuous Bust  หน้าอกอวบใหญ่ cup e ++",
+            ทรงผม: "ผมยาวดำตรงสวย มีปรอยผมที่แก้มเล็กน้อยเป็นธรรมชาติ",
+            ลักษณะใบหน้า: "นางแบบมีโหนกแก้ม คางไม่แหลม ใบหน้าเรียวรูปไข่ (oval face)หน้าผากกว้าง ดวงตาสีน้ำตาลอ่อนเป็นประกาย Upturned Eyes ตาคมกรีด eyeliner  ขนตายาวงอนเรียงช่อ ตาชั้นเดียว monolid eyes ไม่มีถุงใต้ตา มีไฝเสน่ห์  แต่งหน้าสไตล์ฉ่ำวาว (dewy makeup look)  ผิวหน้าโกลว์ฉ่ำ มีไฮไลต์บนโหนกแก้ม จมูก และหน้าผากอย่างพอดี ปัดแก้มและปลายจมูกด้วยสีชมพูอ่อนระเรื่อ คิ้วดกมีมิติ  ปากทรง cherrylips ริมฝีปากอวบอิ่มทาลิปกลอสสีชมพูไล่เฉด (Gradient lips) ให้ความรู้สึกปากฉ่ำน้ำ ละเอียดบนผิวหน้ามนุษย์",
+            การแต่งกาย: "ตามภาพที่แนบ ",
+            ท่าโพส: "วิ่งเล่นหยอกล้อกับกล้อง(ผู้ชม)และยิ้มอย่างสนุกสนาน บนชายหาด ในบรรยากาศยามสาย กับทะเลสีฟ้าครามของไทย",
+            ตั้งค่ากล้อง: "Aperture f/2.8–f/4 เพื่อให้ฉากหลังละลายบางส่วน White balance daylight (5500–5700K) ",
+            มุมกล้อง: "มุมกล้องเต็มตัว อัตราส่วนภาพ 9:16 ",
+            อารมณ์โดยรวม: "สนุกสนาน",
+            แสง: "sun lighting, face illuminated, catchlight in eyes",
+            การจัดองค์ประกอบภาพ: "composition following rule of thirds, subject placed at intersection points, balanced composition",
+            NegativePrompt: "low quality, dolly eye, pixelated, noise, grain, jpeg artifacts, plastic skin, cartoon, illustration, deforme 5:7"
+        },
+        image: "https://img2.pic.in.th/unnamedf4f9ebd656fe6d34.md.jpg"
+    },
+       {
         id: 17,
         category: "portrait",
         title: "นางแบบ v2 ไม่มีร่องแก้ม ตาชั้นเดียว",
