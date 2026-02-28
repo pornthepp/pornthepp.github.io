@@ -173,7 +173,8 @@ function switchView(view) {
 }
 
 const specialData = [
-    { category: "📷 Special Prompt", title: "Randomly Poses", desc: "สุ่มท่าโพสและมุมกล้อง", prompt: "A photo with Randomly select cute and cheerful portrait poses using various camera angles" },
+    { category: "📷 Special Prompt", title: "Randomly Poses (Single)", desc: "สุ่มท่าโพสและมุมกล้อง", prompt: "A single cute and cheerful portrait photo, one pose, captured from a natural camera angle" },
+    { category: "📷 Special Prompt 2", title: "Randomly Poses (Collage)", desc: "สุ่มท่าโพสและมุมกล้อง", prompt: "A photo with Randomly select cute and cheerful portrait poses using various camera angles" },
     
     { category: "📐 Composition & Angles", title: "Rule of Thirds", desc: "กฎสามส่วน: จัดวางตัวแบบไว้ที่จุดตัดเพื่อความสมดุล", prompt: "composition following rule of thirds, subject placed at intersection points, perfect visual balance" },
     { category: "📐 Composition & Angles", title: "Headroom Illusion", desc: "เพิ่มความสูง: เว้นพื้นที่ว่างเหนือศีรษะเยอะๆ เพื่อให้ตัวแบบดูโปร่ง", prompt: "wide shot, huge negative space above head, 1:1 ratio framing, making subject look tall and slender" },
